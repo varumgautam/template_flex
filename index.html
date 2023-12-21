@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; box-sizing: border-box;}
+        .bg1{background-color: yellowgreen;}
+        .bg2{background-color:blue;}
+        .bg3{background-color: red;}
+        .bg4{background-color: gold;}
+        .bg5{background-color: brown;}
+        body{display: flex;flex-wrap: wrap;justify-content: space-between;}
+        /* first condition  header to right box end*/
+        .header{width:100%;height: 10vh;}
+        .article{width:65%;
+            height: 70vh; 
+            border:2px solid black;
+            margin-top:2vh;
+        }
+        .aside{
+            width:30%;
+            height:70vh;
+            /* border: 2px solid black; */
+            margin-top:2vh;
+        }
+        .left-box{
+            width:65%;
+            height:16vh;
+            /* border: 2px solid black; */
+            margin-top: 2vh;
+        }
+        .right-box{
+            width:30%;
+            height:16vh;
+            /* border: 2px solid black; */
+            margin-top: 2vh;
+        }
+       /* second condition start  article*/
+       .article div{
+             width:80%;
+             height: 65vh;
+             margin:2vh auto;
+             
+       }
+       /* third  condition start aside box*/
+       .head{
+            width: 80%;
+            height: 2vh;
+            margin:2vh auto;
+       }
+       .box-box{
+        width:80%;
+        height: 60vh;
+        /* border: 2px solid black; */
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+       }
+       .box{
+        width:26%;
+        height:10vh;
+        /* display: inline-block; */
+        /* flex-wrap: wrap; */
+        margin: 4px auto;
+        /* margin:1px; */
+       }
+       /* fourth condition start left box */
+       .head1{
+        width: 100%;
+        height:2vh;
+        margin: 10px auto;
+       }
+       .head2{
+        width: 60%;
+        height: 2vh;
+        margin-top: 10px;
+       }
+    .box2-box2{
+        width:20%;
+        height:5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 10px;
+    }
+    .box2{
+        width: 25%;
+        height: 5vh;
+    }
+    /* fifth condition apply right box */
+    .box3-box3{
+        width:50%;
+        height:5vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /* margin: 10px; */
+    }
+    .box3{
+        width: 20%;
+        height: 5vh;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="header bg1"></div>
+    <div class="article">
+        <!-- nested article start  -->
+        <div class="bg2"></div>
+    </div>
+    <div class="aside">
+        <!-- start condition box -->
+        <div class="head bg5"></div>
+        <div class="box-box">
+            <div class="box bg1"></div>
+            <div class="box bg2"></div>
+            <div class="box bg3"></div>
+            <div class="box bg4"></div>
+            <div class="box bg5"></div>
+            <div class="box bg1"></div>
+            <div class="box bg3"></div>
+            <div class="box bg2"></div>
+            <div class="box bg4"></div>
+            <div class="box bg5"></div>
+            <div class="box bg2"></div>
+            <div class="box bg3"></div>
+            <div class="box bg1"></div>
+            <div class="box bg5"></div>
+        </div>
+    </div>
+    <div class="left-box">
+        <!-- right box last condition  -->
+        <div class="head1 bg3"></div>
+        <div class="head2 bg5"></div>
+        <div class="box2-box2">    
+            <div class="box2 bg3"></div>
+            <div class="box2 bg2"></div>
+            <div class="box2 bg1"></div>
+        </div>
+    </div>
+    <div class="right-box">
+        <div class="head1 bg3"></div>
+        <div class="head1 bg3"></div>
+        <div class="box3-box3">    
+            <div class="box3 bg3"></div>
+            <div class="box3 bg2"></div>
+            <div class="box3 bg1"></div>
+        </div>
+    </div>
+</body>
+</html>
